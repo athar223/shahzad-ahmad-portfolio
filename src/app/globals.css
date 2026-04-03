@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #FAFAF8;
+  --color-foreground: #1A1A2E;
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
+  --font-sub: var(--font-sub);
+  --font-mono: var(--font-mono);
+  --color-accent: #6C3CE1;
+  --color-accent-light: #EDE9FE;
+  --color-coral: #FF6B6B;
+  --color-warm: #FFF8F0;
+  --color-card: #FFFFFF;
+  --color-muted: #64748B;
+  --color-border: #E8E4DF;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D1CCC4;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9E9A92;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-200%) skewX(-12deg); }
+  100% { transform: translateX(200%) skewX(-12deg); }
+}
+
+::selection {
+  background: #6C3CE1;
+  color: white;
+}
+
+/* Section morph transitions */
+.section-transition {
+  clip-path: inset(0);
+}
