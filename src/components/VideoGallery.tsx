@@ -12,19 +12,19 @@ const categories = [
 
 const fallbackVideos: Record<string, Video[]> = {
   reels: [
-    { id: 1, title: "Instagram Reel — Product Showcase", embed_url: "https://www.youtube.com/embed/dQw4w9WgXcQ", video_file: "", thumbnail: "", description: "Fast-paced product showcase reel with dynamic transitions." },
-    { id: 2, title: "Trending Reel Edit", embed_url: "https://www.youtube.com/embed/dQw4w9WgXcQ", video_file: "", thumbnail: "", description: "Viral-style reel with beat-synced cuts and effects." },
-    { id: 3, title: "Brand Story Reel", embed_url: "https://www.youtube.com/embed/dQw4w9WgXcQ", video_file: "", thumbnail: "", description: "Cinematic brand storytelling in 30-second reel format." },
+    { id: 1, title: "Instagram Reel — Product Showcase", category: "reels", embed_url: "https://www.youtube.com/embed/dQw4w9WgXcQ", video_file: "", thumbnail: "", description: "Fast-paced product showcase reel with dynamic transitions." },
+    { id: 2, title: "Trending Reel Edit", category: "reels", embed_url: "https://www.youtube.com/embed/dQw4w9WgXcQ", video_file: "", thumbnail: "", description: "Viral-style reel with beat-synced cuts and effects." },
+    { id: 3, title: "Brand Story Reel", category: "reels", embed_url: "https://www.youtube.com/embed/dQw4w9WgXcQ", video_file: "", thumbnail: "", description: "Cinematic brand storytelling in 30-second reel format." },
   ],
   podcast: [
-    { id: 4, title: "Tech Talk Episode", embed_url: "https://www.youtube.com/embed/dQw4w9WgXcQ", video_file: "", thumbnail: "", description: "Multi-cam podcast edit with animated captions." },
-    { id: 5, title: "Interview Highlight", embed_url: "https://www.youtube.com/embed/dQw4w9WgXcQ", video_file: "", thumbnail: "", description: "Key moments from a 2-hour podcast, condensed." },
-    { id: 6, title: "Podcast Clips Package", embed_url: "https://www.youtube.com/embed/dQw4w9WgXcQ", video_file: "", thumbnail: "", description: "Social media clips package from a podcast episode." },
+    { id: 4, title: "Tech Talk Episode", category: "podcast", embed_url: "https://www.youtube.com/embed/dQw4w9WgXcQ", video_file: "", thumbnail: "", description: "Multi-cam podcast edit with animated captions." },
+    { id: 5, title: "Interview Highlight", category: "podcast", embed_url: "https://www.youtube.com/embed/dQw4w9WgXcQ", video_file: "", thumbnail: "", description: "Key moments from a 2-hour podcast, condensed." },
+    { id: 6, title: "Podcast Clips Package", category: "podcast", embed_url: "https://www.youtube.com/embed/dQw4w9WgXcQ", video_file: "", thumbnail: "", description: "Social media clips package from a podcast episode." },
   ],
   documentary: [
-    { id: 7, title: "Cultural Heritage Doc", embed_url: "https://www.youtube.com/embed/dQw4w9WgXcQ", video_file: "", thumbnail: "", description: "Short documentary exploring local cultural heritage." },
-    { id: 8, title: "Behind The Scenes", embed_url: "https://www.youtube.com/embed/dQw4w9WgXcQ", video_file: "", thumbnail: "", description: "Behind-the-scenes documentary of a creative project." },
-    { id: 9, title: "Travel Documentary", embed_url: "https://www.youtube.com/embed/dQw4w9WgXcQ", video_file: "", thumbnail: "", description: "Cinematic travel documentary with narration." },
+    { id: 7, title: "Cultural Heritage Doc", category: "documentary", embed_url: "https://www.youtube.com/embed/dQw4w9WgXcQ", video_file: "", thumbnail: "", description: "Short documentary exploring local cultural heritage." },
+    { id: 8, title: "Behind The Scenes", category: "documentary", embed_url: "https://www.youtube.com/embed/dQw4w9WgXcQ", video_file: "", thumbnail: "", description: "Behind-the-scenes documentary of a creative project." },
+    { id: 9, title: "Travel Documentary", category: "documentary", embed_url: "https://www.youtube.com/embed/dQw4w9WgXcQ", video_file: "", thumbnail: "", description: "Cinematic travel documentary with narration." },
   ],
 };
 
