@@ -115,22 +115,6 @@ export default function Hero({ settings }: HeroProps) {
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-16 items-center">
         {/* Text Content */}
         <div className="text-center md:text-left">
-          <motion.div
-            initial={{ opacity: 0, width: 0 }}
-            animate={{ opacity: 1, width: "auto" }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="overflow-hidden inline-block mb-5"
-          >
-            <motion.p
-              initial={{ x: -100 }}
-              animate={{ x: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-              className="font-[family-name:var(--font-sub)] text-[#6C3CE1] text-sm uppercase tracking-[0.3em] font-semibold border-l-2 border-[#6C3CE1] pl-3"
-            >
-              Creative Portfolio
-            </motion.p>
-          </motion.div>
-
           <h1 className="font-[family-name:var(--font-heading)] text-5xl md:text-7xl font-extrabold leading-tight mb-6 text-[#1A1A2E]">
             <AnimatedText text={line1} />
             <br />
