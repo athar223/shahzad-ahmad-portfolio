@@ -38,7 +38,7 @@ export default function Navbar({ cvUrl }: NavbarProps) {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
         <a
           href="#home"
           className="font-[family-name:var(--font-heading)] text-2xl font-extrabold text-[#6C3CE1]"

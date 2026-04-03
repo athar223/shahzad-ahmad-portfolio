@@ -27,8 +27,8 @@ export default function Projects({ projects }: ProjectsProps) {
   const data = projects?.length ? projects : fallbackProjects;
 
   return (
-    <section id="projects" className="relative py-28 bg-[#FAFAF8]">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="projects" className="relative py-16 md:py-28 bg-[#FAFAF8]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -50,7 +50,7 @@ export default function Projects({ projects }: ProjectsProps) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-[family-name:var(--font-heading)] text-4xl md:text-5xl font-extrabold text-[#1A1A2E]"
+            className="font-[family-name:var(--font-heading)] text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#1A1A2E]"
           >
             Featured <span className="text-[#6C3CE1]">Projects</span>
           </motion.h2>

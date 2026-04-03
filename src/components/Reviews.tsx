@@ -40,9 +40,9 @@ export default function Reviews({ reviews }: ReviewsProps) {
   const data = reviews?.length ? reviews : fallbackReviews;
 
   return (
-    <section id="reviews" className="relative py-28 bg-white overflow-hidden">
+    <section id="reviews" className="relative py-16 md:py-28 bg-white overflow-hidden">
       <WaveLines variant="top" color="#F59E0B" opacity={0.03} />
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -64,7 +64,7 @@ export default function Reviews({ reviews }: ReviewsProps) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-[family-name:var(--font-heading)] text-4xl md:text-5xl font-extrabold text-[#1A1A2E]"
+            className="font-[family-name:var(--font-heading)] text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#1A1A2E]"
           >
             Client <span className="text-[#6C3CE1]">Reviews</span>
           </motion.h2>

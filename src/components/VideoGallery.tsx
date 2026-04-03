@@ -46,8 +46,8 @@ export default function VideoGallery({ videos }: VideoGalleryProps) {
   const currentVideos = getVideosForCategory(activeTab);
 
   return (
-    <section id="videos" className="relative py-28 bg-[#FAFAF8] overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="videos" className="relative py-16 md:py-28 bg-[#FAFAF8] overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -69,7 +69,7 @@ export default function VideoGallery({ videos }: VideoGalleryProps) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-[family-name:var(--font-heading)] text-4xl md:text-5xl font-extrabold text-[#1A1A2E]"
+            className="font-[family-name:var(--font-heading)] text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#1A1A2E]"
           >
             Video <span className="text-[#6C3CE1]">Gallery</span>
           </motion.h2>
@@ -81,7 +81,7 @@ export default function VideoGallery({ videos }: VideoGalleryProps) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex flex-wrap justify-center gap-3 mb-14"
+          className="flex overflow-x-auto sm:flex-wrap sm:justify-center gap-3 mb-10 md:mb-14 pb-2 sm:pb-0 -mx-4 px-4 sm:mx-0 sm:px-0 no-scrollbar"
         >
           {categories.map((cat) => (
             <motion.button
@@ -89,7 +89,7 @@ export default function VideoGallery({ videos }: VideoGalleryProps) {
               onClick={() => setActiveTab(cat.id)}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className={`relative px-6 py-3 rounded-2xl text-sm font-semibold font-[family-name:var(--font-sub)] transition-all duration-300 flex items-center gap-2.5 ${
+              className={`relative px-4 sm:px-6 py-2.5 sm:py-3 rounded-2xl text-xs sm:text-sm font-semibold font-[family-name:var(--font-sub)] transition-all duration-300 flex items-center gap-2 sm:gap-2.5 whitespace-nowrap shrink-0 ${
                 activeTab === cat.id
                   ? "bg-[#6C3CE1] text-white shadow-lg shadow-[#6C3CE1]/20"
                   : "bg-white text-stone-500 border border-stone-200 hover:border-[#6C3CE1]/30 hover:text-[#6C3CE1]"
@@ -118,7 +118,7 @@ export default function VideoGallery({ videos }: VideoGalleryProps) {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -20, scale: 0.98 }}
             transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-            className="grid md:grid-cols-3 gap-6"
+            className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-6"
           >
             {currentVideos.map((video, index) => (
               <motion.div

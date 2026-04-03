@@ -13,7 +13,7 @@ export default function SectionDivider({
 }: SectionDividerProps) {
   return (
     <div
-      className={`relative w-full h-20 md:h-28 -mt-1 ${flip ? "rotate-180" : ""}`}
+      className={`relative w-full h-12 sm:h-20 md:h-28 -mt-1 ${flip ? "rotate-180" : ""}`}
       style={{ background: to }}
     >
       <svg

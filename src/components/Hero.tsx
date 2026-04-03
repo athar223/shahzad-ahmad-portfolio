@@ -112,10 +112,10 @@ export default function Hero({ settings }: HeroProps) {
         />
       ))}
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-16 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-20 md:py-24 grid md:grid-cols-2 gap-10 md:gap-16 items-center">
         {/* Text Content */}
-        <div className="text-center md:text-left">
-          <h1 className="font-[family-name:var(--font-heading)] text-5xl md:text-7xl font-extrabold leading-tight mb-6 text-[#1A1A2E]">
+        <div className="text-center md:text-left order-2 md:order-1">
+          <h1 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl md:text-7xl font-extrabold leading-tight mb-4 md:mb-6 text-[#1A1A2E]">
             <AnimatedText text={line1} />
             <br />
             <AnimatedText
@@ -128,7 +128,7 @@ export default function Hero({ settings }: HeroProps) {
             initial={{ opacity: 0, filter: "blur(10px)" }}
             animate={{ opacity: 1, filter: "blur(0px)" }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="text-stone-500 text-lg md:text-xl mb-8 max-w-lg leading-relaxed"
+            className="text-stone-500 text-base sm:text-lg md:text-xl mb-6 md:mb-8 max-w-lg mx-auto md:mx-0 leading-relaxed"
           >
             {subtitle}
           </motion.p>
@@ -138,13 +138,13 @@ export default function Hero({ settings }: HeroProps) {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.0 }}
-            className="flex flex-wrap gap-4 justify-center md:justify-start mb-12"
+            className="flex flex-wrap gap-3 sm:gap-4 justify-center md:justify-start mb-8 md:mb-12"
           >
             <motion.a
               href="#projects"
               whileHover={{ scale: 1.05, boxShadow: "0 10px 30px rgba(108, 60, 225, 0.25)" }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-3.5 bg-[#6C3CE1] text-white rounded-full font-medium transition-all duration-300"
+              className="px-6 sm:px-8 py-3 sm:py-3.5 bg-[#6C3CE1] text-white rounded-full font-medium transition-all duration-300 text-sm sm:text-base"
             >
               View Work
             </motion.a>
@@ -152,7 +152,7 @@ export default function Hero({ settings }: HeroProps) {
               href="#contact"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-3.5 border-2 border-stone-200 text-[#1A1A2E] rounded-full font-medium hover:border-[#6C3CE1] hover:text-[#6C3CE1] transition-all duration-300"
+              className="px-6 sm:px-8 py-3 sm:py-3.5 border-2 border-stone-200 text-[#1A1A2E] rounded-full font-medium hover:border-[#6C3CE1] hover:text-[#6C3CE1] transition-all duration-300 text-sm sm:text-base"
             >
               Contact Me
             </motion.a>
@@ -179,7 +179,7 @@ export default function Hero({ settings }: HeroProps) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 1.2 }}
-            className="flex gap-12 justify-center md:justify-start"
+            className="flex gap-8 sm:gap-12 justify-center md:justify-start"
           >
             {stats.map((stat, i) => (
               <motion.div
@@ -188,7 +188,7 @@ export default function Hero({ settings }: HeroProps) {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 1.3 + i * 0.15, type: "spring", stiffness: 200 }}
               >
-                <p className="font-[family-name:var(--font-mono)] text-3xl md:text-4xl font-bold text-[#6C3CE1]">
+                <p className="font-[family-name:var(--font-mono)] text-2xl sm:text-3xl md:text-4xl font-bold text-[#6C3CE1]">
                   {stat.value}
                 </p>
                 <p className="font-[family-name:var(--font-sub)] text-stone-400 text-sm mt-1 font-medium">{stat.label}</p>
@@ -202,7 +202,7 @@ export default function Hero({ settings }: HeroProps) {
           initial={{ opacity: 0, scale: 0.5, rotate: -10 }}
           animate={{ opacity: 1, scale: 1, rotate: 0 }}
           transition={{ duration: 1, delay: 0.5, type: "spring", stiffness: 100 }}
-          className="flex justify-center"
+          className="flex justify-center order-1 md:order-2"
           ref={imageRef}
           onMouseMove={handleMouseMove}
           onMouseLeave={handleMouseLeave}
@@ -226,7 +226,7 @@ export default function Hero({ settings }: HeroProps) {
               transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
               className="absolute -inset-6 rounded-full border border-dashed border-[#6C3CE1]/15"
             />
-            <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white shadow-2xl shadow-[#6C3CE1]/10">
+            <div className="relative w-56 h-56 sm:w-72 sm:h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white shadow-2xl shadow-[#6C3CE1]/10">
               <Image
                 src={profileImage || "/profile.jpg"}
                 alt="Shahzad Ahmad"

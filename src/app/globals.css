@@ -62,3 +62,12 @@ html {
 .section-transition {
   clip-path: inset(0);
 }
+
+/* Hide scrollbar for mobile tabs */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
