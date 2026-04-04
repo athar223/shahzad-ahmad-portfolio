@@ -134,7 +134,7 @@ export default function Contact({ settings }: ContactProps) {
               disabled={status === "sending"}
               whileHover={{ scale: 1.02, boxShadow: "0 10px 30px rgba(108, 60, 225, 0.25)" }}
               whileTap={{ scale: 0.98 }}
-              className="w-full py-4 bg-[#6C3CE1] text-white rounded-2xl font-semibold hover:bg-[#5B2DC9] transition-all duration-300 disabled:opacity-50"
+              className="w-full py-3.5 sm:py-4 bg-[#6C3CE1] text-white rounded-2xl font-semibold hover:bg-[#5B2DC9] transition-all duration-300 disabled:opacity-50 text-sm sm:text-base mx-auto block"
             >
               {status === "sending" ? "Sending..." : status === "sent" ? "Message Sent!" : status === "error" ? "Failed — Try Again" : "Send Message"}
             </motion.button>
